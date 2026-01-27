@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Dev Bruno</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <Nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </Nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/Foto_Bruno.jpeg" alt="Foto de Perfil Bruno Fernandes" class="foto-perfil">
+        <h1>Bruno Fernandes</h1>
+        <p class="cabecalho-subtitulo">Desenvolvedor Front End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Sou um desenvolvedor front-end apaixonado por criar experiências web únicas e memoráveis. Combino
+                código limpo com design moderno para desenvolver sites que não só funcionam perfeitamente, mas também
+                impressionam visualmente.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <a href="https://loja-geek-ficticio1.vercel.app/" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/UseDev.png" alt="Imagem do projeto UseDev" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">UseDev</h3>
+                        <p class="paragrafo-projetos">O Meteora é um site fictício de e-commerce de moda com layout
+                            moderno e totalmente responsivo.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://landing-page-cinema.vercel.app/index.html" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/Luz_e_Cena.png" alt="Imagem do projeto Luz e Cena" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Luz e Cena</h3>
+                        <p class="paragrafo-projetos">Site de cinema com visual moderno, exibição de filmes em cartaz,
+                            seções organizadas e navegação intuitiva.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://serenatto-cafe-e-bistro-nine.vercel.app/" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/Serenatto.png" alt="Imagem do projeto Serenatto" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Serenatto</h3>
+                        <p class="paragrafo-projetos">Site de cafeteria com cardápio digital, seções organizadas e
+                            design moderno e responsivo.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://meteora-smoky.vercel.app/" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/Meteora.png" alt="Imagem do projeto Meteora" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Meteora</h3>
+                        <p class="paragrafo-projetos">Loja virtual de moda com vitrine de produtos, carrossel de
+                            destaques e layout moderno e responsivo.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contatos</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511954092454';
+
+            const texto = `Ola! Me chamo ${nome}, ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            console.log(url);
+
+            window.open(url, '_blank');
+
+        }
+    </script>
+
+</body>
+
+</html>
