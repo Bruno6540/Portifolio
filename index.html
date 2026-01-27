@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="perfil.css">
     <title>Dev Bruno</title>
 </head>
 
@@ -30,9 +32,43 @@
     </Nav>
 
     <main id="inicio" class="cabecalho">
-        <img src="./img/Foto_Bruno.jpeg" alt="Foto de Perfil Bruno Fernandes" class="foto-perfil">
-        <h1>Bruno Fernandes</h1>
-        <p class="cabecalho-subtitulo">Desenvolvedor Front End</p>
+        <div class="container">
+            <div class="card">
+                <div class="card__border">
+                    <img src="./img/Foto_Bruno.jpeg" alt="foto de perfil" class="card__img">
+                </div>
+
+                <h3 class="card__name">Bruno Fernandes</h3>
+                <span class="card__profission">Dev Front End</span>
+
+                <div class="card__social" id="card-social">
+                    <div class="card__social-control">
+                        <!-- Toggle button-->
+                        <div class="card__social-toggle" id="card-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">Minhas redes sociais</span>
+
+                        <!--Card social-->
+                        <ul class="card__social-list">
+                            <a href="https://www.linkedin.com/in/brunofernandesdevpro/" target="_blank"
+                                class="card__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+
+                            <a href="https://github.com/Bruno6540" target="_blank" class="card__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/_bruno_fer/" target="_blank" class="card__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <section id="sobre" class="sobre">
@@ -131,7 +167,8 @@
         }
     </script>
 
-</body>
+    <script src="./main.js"></script>
 
+</body>
 
 </html>
