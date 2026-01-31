@@ -268,3 +268,67 @@ h1 {
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
     color: var(--primaria);
 }
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navegacao {
+    padding: 1rem;
+  }
+
+  /* Cabeçalho */
+  .cabecalho {
+    padding-top: 6rem;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    width: 220px;
+    height: 220px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .cabecalho-subtitulo {
+    font-size: 1.1rem;
+  }
+
+  /* Sobre */
+  .sobre-caixa {
+    padding: 1.5rem;
+  }
+
+  .sobre-paragrafo {
+    font-size: 1rem;
+  }
+
+  /* Projetos */
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-card {
+    text-align: center;
+  }
+
+  /* Contatos */
+  .formulario-contato {
+    width: 100%;
+  }
+
+  /* Centralizar tudo */
+  .container,
+  .sobre,
+  .projetos,
+  .contatos {
+    text-align: center;
+  }
+
+}
