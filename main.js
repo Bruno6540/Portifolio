@@ -67,14 +67,30 @@ $(document).ready(function () {
 
   // Animação Sobre mim
   ScrollReveal().reveal('#sobre', {
-    origin: 'bottom',
+    origin: 'left',
     duration: 3000,
     distance: '200px',
   })
 
+  ScrollReveal().reveal('.card__name', {
+    delay: 900,
+    duration: 1200,
+    easing: 'ease-in-out',
+    opacity: 0,
+    reset: false
+  });
+
+  ScrollReveal().reveal('.card__profission', {
+    delay: 1500,
+    duration: 1200,
+    easing: 'ease-in-out',
+    opacity: 0,
+    reset: false
+  });
+
    // Animações dos Projetos
-  ScrollReveal().reveal('.projetos', {
-    origin: 'left',
+  ScrollReveal().reveal('.projetos-card', {
+    origin: 'bottom',
     duration: 2000,
     distance: '20%'
   })
