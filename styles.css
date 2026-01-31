@@ -23,6 +23,10 @@ body {
     color: var(--claro);
 }
 
+.nav-item.active .menu-link::after {
+    width: 100%;
+}
+
 .navegacao {
     position: fixed;
     top: 0;

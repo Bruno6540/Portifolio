@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="perfil.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Dev Bruno</title>
 </head>
 
@@ -16,16 +18,16 @@
 
     <Nav class="navegacao">
         <ul class="menu">
-            <li>
+            <li class="nav-item">
                 <a href="#inicio" class="menu-link">Início</a>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#sobre" class="menu-link">Sobre</a>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#projetos" class="menu-link">Projetos</a>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#contatos" class="menu-link">Contato</a>
             </li>
         </ul>
@@ -35,41 +37,41 @@
 
         <div class="container">
 
-                <div class="card">
-                    <div class="card__border">
-                        <img src="./img/Foto_Bruno2.jpg" alt="foto de perfil" class="card__img">
-                    </div>
+            <div class="card">
+                <div class="card__border">
+                    <img src="./img/Foto_Bruno2.jpg" alt="foto de perfil" class="card__img">
+                </div>
 
-                    <h3 class="card__name">Bruno Fernandes</h3>
-                    <span class="card__profission">Dev Front End</span>
+                <h3 class="card__name">Bruno Fernandes</h3>
+                <span class="card__profission">Dev Front End</span>
 
-                    <div class="card__social" id="card-social">
-                        <div class="card__social-control">
-                            <!-- Toggle button-->
-                            <div class="card__social-toggle" id="card-toggle">
-                                <i class="ri-add-line"></i>
-                            </div>
-
-                            <span class="card__social-text">Minhas redes sociais</span>
-
-                            <!--Card social-->
-                            <ul class="card__social-list">
-                                <a href="https://www.linkedin.com/in/brunofernandesdevpro/" target="_blank"
-                                    class="card__social-link">
-                                    <i class="ri-linkedin-fill"></i>
-                                </a>
-
-                                <a href="https://github.com/Bruno6540" target="_blank" class="card__social-link">
-                                    <i class="ri-github-fill"></i>
-                                </a>
-
-                                <a href="https://www.instagram.com/_bruno_fer/" target="_blank" class="card__social-link">
-                                    <i class="ri-instagram-line"></i>
-                                </a>
-                            </ul>
+                <div class="card__social" id="card-social">
+                    <div class="card__social-control">
+                        <!-- Toggle button-->
+                        <div class="card__social-toggle" id="card-toggle">
+                            <i class="ri-add-line"></i>
                         </div>
+
+                        <span class="card__social-text">Minhas redes sociais</span>
+
+                        <!--Card social-->
+                        <ul class="card__social-list">
+                            <a href="https://www.linkedin.com/in/brunofernandesdevpro/" target="_blank"
+                                class="card__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+
+                            <a href="https://github.com/Bruno6540" target="_blank" class="card__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/_bruno_fer/" target="_blank" class="card__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </ul>
                     </div>
                 </div>
+            </div>
         </div>
     </main>
     <!--Seção "Sobre Mim"-->
@@ -96,9 +98,9 @@
                 </a>
 
                 <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">UseDev</h3>
+                    <h3 class="info-projetos">Food</h3>
 
-                    <p class="paragrafo-projetos">O Meteora é um site fictício de e-commerce de moda com layout
+                    <p class="paragrafo-projetos">O Food é um site fictício de restaurante com layout
                         moderno e totalmente responsivo.</p>
 
                     <div class="projeto-links">
