@@ -174,29 +174,3 @@ img{
         transform: rotate(-1deg);
     }
 }
-
-@media (max-width: 768px) {
-
-  .container {
-    margin-inline: 1rem;
-  }
-
-  .card {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-  .card__img {
-    width: 150px;
-  }
-
-  .card__border {
-    width: 170px;
-    height: 170px;
-  }
-
-  .card__social {
-    width: 180px;
-  }
-
-}
