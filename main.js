@@ -92,6 +92,13 @@ $(document).ready(function () {
   ScrollReveal().reveal('.projetos-card', {
     origin: 'left',
     duration: 2000,
+    distance: '20%',
+  })
+
+  // Animações dos Contatos
+  ScrollReveal().reveal('.contatos', {
+    origin: 'bottom',
+    duration: 2000,
     distance: '20%'
   })
 
