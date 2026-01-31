@@ -268,16 +268,3 @@ h1 {
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
     color: var(--primaria);
 }
-
-@media (max-width: 768px) {
-
-  /* Centralizar tudo */
-  .navegacao,
-  .container,
-  .sobre,
-  .projetos,
-  .contatos {
-    text-align: center;
-  }
-
-}
