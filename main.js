@@ -67,7 +67,7 @@ $(document).ready(function () {
 
   // Animação Sobre mim
   ScrollReveal().reveal('#sobre', {
-    origin: 'left',
+    origin: 'right',
     duration: 3000,
     distance: '200px',
   })
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
    // Animações dos Projetos
   ScrollReveal().reveal('.projetos-card', {
-    origin: 'bottom',
+    origin: 'left',
     duration: 2000,
     distance: '20%'
   })
