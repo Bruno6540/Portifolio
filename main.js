@@ -58,4 +58,48 @@ $(document).ready(function () {
 
   showSocial("card-toggle", "card-social");
 
+  // Animações das sessões
+  ScrollReveal().reveal('.card', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+  })
+
+  ScrollReveal().reveal('.card__name', {
+    delay: 900,
+    duration: 1200,
+    easing: 'ease-in-out',
+    opacity: 0,
+    reset: false
+  });
+
+  ScrollReveal().reveal('.card__profission', {
+    delay: 1500,
+    duration: 1200,
+    easing: 'ease-in-out',
+    opacity: 0,
+    reset: false
+  });
+
+  // Animação Sobre mim
+  ScrollReveal().reveal('#sobre', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%',
+  })
+
+   // Animações dos Projetos
+  ScrollReveal().reveal('.projetos-card', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%',
+  })
+
+  // Animações dos Contatos
+  ScrollReveal().reveal('.contatos', {
+    origin: 'bottom',
+    duration: 2000,
+    distance: '20%'
+  })
+
 });
